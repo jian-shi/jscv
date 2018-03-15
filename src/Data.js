@@ -9,7 +9,7 @@ export const PORTFOLIO = [
         "id": "act",
         "img" : actImg,
         "title": "act.org.nz",
-        "intro" : "Coded custom templates for Wordpress suing PHP and Javascript, also used grid system to adapt a range of devices. Implemented tests for responsive design."
+        "intro" : "Wordpress website using PHP and Javascript for template, also applied grid system to adapt a range of devices. It is also intergrated with CiviCRM to manage contacts"
     },
     {
         "id": "iea",
