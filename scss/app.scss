@@ -1,0 +1,280 @@
+$primary:       #194779;
+$secondary:     #ced4da;
+$font-weight-normal: 400;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (min-width: 1200px) { @content ; }
+   }
+    @else if $point == laptop {
+      @media (min-width: 992px) { @content ; }
+   }
+     @else if $point == tablet {
+      @media (max-width: 991px) { @content ; }
+   }
+    @else if $point == phablet {
+      @media (min-width: 481px)  { @content ; }
+   }
+   @else if $point == mobileonly {
+      @media (max-width: 480px)  { @content ; }
+   }
+ }
+body{
+    background-color: $secondary;
+    color: $gray-800
+}
+$border: 1px dotted $gray-800;
+.App{
+    font: {
+        family: $font-family-sans-serif;
+        size: $font-size-base;
+        weight: $font-weight-normal;
+    }
+    .container{
+        margin-top: 2rem;
+        width: 75%;
+        
+        .left{
+            padding-bottom: 1rem;
+        }
+        .portrait{
+            background-color: $gray-100;
+            padding-top: 1rem;
+            img{
+                height: 10em;
+                width: 10em;
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+          }
+
+        .name{
+            padding-top: 1rem;
+            text-align: center;
+            height: 5rem;
+            background-color: $gray-100;
+            font-size: $font-size-lg;
+            span{
+                display: block;
+                font-size: $font-size-sm;
+                font-weight: $font-weight-light;
+            }
+        }
+        .social{
+            padding-left: 5rem;
+            padding-right: 5rem;
+            border-top: $border;
+            height: 4rem;
+            background-color: $gray-100;
+            a.nav-link{
+               padding: 0;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    display: block;
+                }
+            }
+        }
+        .menu{
+            height: 5rem;
+            background-color: $gray-100;
+            margin-bottom: 1rem;
+            text-align: center;
+            .fa-2x{
+                display: block;
+            }
+            .isActive{
+                color: $primary;
+            }
+            .menu-item{
+                font-size: .7rem;
+                width: 25%;
+                padding: .7rem;
+                border-right: $border;
+            }
+        }
+        
+        .menu>:last-child{
+            border: none;
+        }
+        .main{
+            background-color: $gray-100;
+            .main-title{
+                padding-left: 2rem;
+                border-bottom: $border;
+                width: 100%;
+                height: 2rem;
+                color: $primary;
+                font-size: $font-size-lg;
+            }
+            .main-content{
+                .col-sm-12,.col-md-12{
+                    padding-bottom: 1rem;
+                }
+                width: 100%;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                min-height: 30rem;
+                h4{
+                    color: $primary;
+                }
+                .detail{
+                    span{
+                        font-weight: $font-weight-light;
+                    }
+                }
+                .skill{
+                    .progress{
+                        height: .5rem;
+                    }
+                }
+                
+                .intro{
+                    margin-top:2rem;
+                }
+                .portfolio-item{
+                    padding: 0;
+                    .card:hover .info{
+                        top: 0;
+                        display: block;
+                    }
+                    .info{
+                        position: absolute;
+                        top: 100%;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.4);
+                        -webkit-transition: top 0.6s ease-in-out;
+                        left: 0;
+                        color: #f7f7f7;
+                        text-decoration: none;
+                        padding: 2rem;
+                    }
+                    .card{
+                        border: none;
+                        border-radius: 0;
+                        height: 155px;
+                        overflow: hidden;
+                        .card-img{
+                            border-radius: 0;
+                        }
+                    }
+                }
+                #triangle-down{
+                    width: 0;
+                    height: 0;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-bottom: 15px solid $primary;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .portfolio-dropdown{
+                    h5{
+                        color: $primary;
+                    }
+                    padding-top: 2rem;
+                    border: 1px solid $primary;
+                }
+                .portfolio-hide{
+                    display: none;
+                }
+                
+                .mobile-show{
+                    @include breakpoint(tablet){
+                        display: block;
+                    }
+                    @include breakpoint(laptop){
+                        display: none;
+                    }
+                    padding: .5rem;
+                    
+                    
+                }
+                .mobile-hide{
+                    @include breakpoint(tablet){
+                        display: none;
+                    }
+                    @include breakpoint(laptop){
+                        display: block;
+                    }
+                }
+                
+                
+                
+                #contact{
+                    .alert.alert-success.hidden{
+                        display: none;
+                    }
+                    
+                    #name{
+                        width: 100%;
+                        @include breakpoint(tablet){
+                            width:45%;
+                        }
+                        float:left;
+                    }
+                    #city{
+                        width: 100%;
+                        @include breakpoint(tablet){
+                            width:45%;
+                        }
+                        float:right;
+                    }
+                    #email{
+                        width: 100%;
+                        @include breakpoint(tablet){
+                            width:45%;
+                        }
+                        float:right;
+                    }
+                    #mobile{
+                        width: 100%;
+                        @include breakpoint(tablet){
+                            width:45%;
+                        }
+                        float:left;
+                    }
+                    input{
+                       border: none;
+                       border-radius: 0;
+                       outline: none;
+                       background-color: transparent;
+                       border-bottom: 1px solid;
+                       margin-bottom: 1rem;
+                    }
+                    textarea{
+                        height: 10rem;
+                        width:100%;
+                        outline:none;
+                        background: transparent;
+                        border: 1px solid;
+                        border-radius: 0;
+                    }
+                    .submit{
+                        font-size: $font-size-sm;
+                        background-color: transparent;
+                        float: right;
+                        border-bottom: 2px solid;
+                        border-radius: 0;
+                      }
+                    .submit:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .footer{
+            height: 10rem;
+            background-color: $gray-100;
+        }
+    }
+    
+    
+}
