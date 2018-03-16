@@ -1,6 +1,6 @@
 import actImg from './img/act.png';
 import ieaImg from './img/iea.png';
-import cvImg from './img/cv.png';
+import lightworkImg from './img/lightwork.png';
 import mapImg from './img/map.png';
 import grabImg from './img/screengrab.png';
 import inrollImg from './img/inroll.png';
@@ -9,36 +9,42 @@ export const PORTFOLIO = [
         "id": "act",
         "img" : actImg,
         "title": "act.org.nz",
-        "intro" : "Wordpress website using PHP and Javascript for template, also applied grid system to adapt a range of devices. It is also intergrated with CiviCRM to manage contacts"
+        "intro" : "act.org.nz is a wordpress website using HTML, CSS, PHP and JavaScript for template, also applied grid system to adapt a range of devices. It is also intergrated with CiviCRM to manage contacts",
+        "skills": ["HTML5 - audio, video, canvas","CSS3 - preprocessed with SASS","PHP","JavaScript", "Ressponsive Website Design"]
     },
     {
         "id": "iea",
         "img": ieaImg,
         "title": "IEANZ",
-        "intro": "Interpreted and executed designs as requested by clients then eveloped and enhanced the site. Maintained and updated HTML/CSS templates on a regular basis and as required."
+        "intro": "Website developed for IEANZ. Interpreted and executed designs as requested by clients then eveloped and enhanced the site. Maintained and updated HTML/CSS templates on a regular basis and as required.",
+        "skills": ["UI/UX Design", "HTML5 - audio, video","CSS3 - preprocessed with SASS", "PHP"]
     },
     {
         "id": "eroll",
         "img": inrollImg,
         "title": "Electroal Roll",
-        "intro": "A database web application in PHP (Laravel framework) and MySQL to enable my client’s non-professional IT users and volunteers to access and update a copy of the New Zealand electoral roll. The electoral role is a regulated database complied by the New Zealand Electoral Commission and contains data on each of New Zealand’3,000,000 plus electors."
+        "intro": "A database web application in PHP (Laravel framework) and MySQL to enable my client’s non-professional IT users and volunteers to access and update a copy of the New Zealand electoral roll. The electoral role is a regulated database complied by the New Zealand Electoral Commission and contains data on each of New Zealand’3,000,000 plus electors.",
+        "skills": ["HTML5", "CSS3", "AngularJS", "PHP - Laravel", "MySQL"]
     },
     {
         "id": "map",
         "img": mapImg,
         "title": "Interactive Map",
-        "intro": "A Javascript based interactive map to synthesise complex census data into visual formats so that it could be easily digested by the business."
+        "intro": "A Javascript based interactive map to synthesise complex census data into visual formats so that it could be easily digested by the business.",
+        "skills":  ["Javascript -Leafleft"]
     },
     {
         "id": "js",
         "img": grabImg,
         "title": "Javascript Module",
-        "intro": "A ReactJS single-page module to collect donation that can be reused for other projects"
+        "intro": "A ReactJS single-page module to collect donation that can be reused for other projects",
+        "skills": ["HTML5","CSS3 - preprocessed with SASS", "React.JS"]
     },
     {
-        "id": "cv",
-        "img": cvImg,
-        "title": "JIAN SHI's CV",
-        "intro": "jshi.site is a web application developed using React.js and Bootstrap for front-end, and Node.js for a simple API. "
+        "id": "lightwork",
+        "img": lightworkImg,
+        "title": "Lightwork Marking",
+        "intro": "I spent a summer working as a Java/PHP programmer on Lightwork project which is a Java application used for synchronising/updating Moodle server information through RESTful APIs.",
+        "skills": ["Java", "PHP"]
     }
 ]

@@ -45,8 +45,7 @@ export default class About extends Component {
         </div>
         <div className="row intro">
         <div className="col-12">
-          <p>I have a Bachelor’s degree in Computer Science and I have the ability to design, develop test, and maintain high quality codes. My skills include using Javascript/React, PHP/MySQL, Python, HTML 5, CSS3.</p>
-          <p>I am self-motivated, continuous self-studying has allowed me to follow the IT trend closely. I am also a great team player and always willing to learn from others. I am committed to building attractive, concise, and user-friendly web applications.</p>
+          <p>Experienced developer focusing on front-end development, with up-to-date knowledge of web design, tools and coding techniques, I am committed to creating attractive, concise, and user-friendly web applications. Looking forward to joining a growing company and developing my skills.</p>
         </div>
         </div>
       </div>

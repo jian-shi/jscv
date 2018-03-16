@@ -6564,6 +6564,17 @@ body {
         padding: 2rem;
         margin-bottom: 2rem;
         min-height: 30rem; }
+        .App .container .main .main-content .modal-img {
+          max-width: 100%; }
+        .App .container .main .main-content .skill-used {
+          background: #194779;
+          color: white;
+          padding: .1rem;
+          margin: .2rem;
+          display: inline-block;
+          border-radius: 3px;
+          -moz-box-shadow: 2px 2px #ced4da;
+          box-shadow: 2px 2px #ced4da; }
         .App .container .main .main-content .col-sm-12, .App .container .main .main-content .col-md-12 {
           padding-bottom: 1rem; }
         .App .container .main .main-content h4 {
@@ -6591,10 +6602,12 @@ body {
             text-decoration: none;
             padding: 2rem; }
           .App .container .main .main-content .portfolio-item .card {
-            border: none;
+            border: 1px dotted #194779;
             border-radius: 0;
             height: 155px;
-            overflow: hidden; }
+            overflow: hidden;
+            margin: .5rem;
+            padding: .5rem; }
             .App .container .main .main-content .portfolio-item .card .card-img {
               border-radius: 0; }
         .App .container .main .main-content #triangle-down {

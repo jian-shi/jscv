@@ -113,6 +113,19 @@ $border: 1px dotted $gray-800;
                 font-size: $font-size-lg;
             }
             .main-content{
+                .modal-img{
+                    max-width: 100%;
+                }
+                .skill-used{
+                    background: $primary;
+                    color: white;
+                    padding: .1rem;
+                    margin: .2rem;
+                    display: inline-block;
+                    border-radius: 3px;
+                    -moz-box-shadow: 2px 2px $secondary;
+                    box-shadow: 2px 2px $secondary;
+                }
                 .col-sm-12,.col-md-12{
                     padding-bottom: 1rem;
                 }
@@ -156,10 +169,12 @@ $border: 1px dotted $gray-800;
                         padding: 2rem;
                     }
                     .card{
-                        border: none;
+                        border: 1px dotted $primary;
                         border-radius: 0;
                         height: 155px;
                         overflow: hidden;
+                        margin: .5rem;
+                        padding: .5rem;
                         .card-img{
                             border-radius: 0;
                         }

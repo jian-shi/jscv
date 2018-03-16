@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
     return (
       <div className="main-content">
         <div className="row">
-          {this.state.data.map(obj=><PortfolioDetail key={obj.id} id={obj.id} title={obj.title} img={obj.img} intro={obj.intro}/>)}
+          {this.state.data.map(obj=><PortfolioDetail key={obj.id} id={obj.id} title={obj.title} img={obj.img} intro={obj.intro} skills={obj.skills}/>)}
         </div>
       </div>
        
